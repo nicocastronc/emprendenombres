@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<section>
+    {% block content %}
+
+<div class="col-md-8 offset-md-2 align container-max-width ">
+    <form action="{% url 'nombre' %}" class="card card-body p-5" style="background-color:#78909c">
+        <h1 class="h4">EMPRENDENOMBRES</h1>
+        <label for="categorias" class="my-2">Seleccioná la categoría de tu emprendimiento:</label>
+        <select name="categorias" id="categorias" class="form-control">
+            <option value="moda">Ropa/Moda General</option>
+            <option value="tech">Tecnología</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="riqueza">Riqueza</option>
+            <option value="educacion">Educación</option>
+            <option value="kiosko">Kiosko</option>
+
+
+        </select>
+        <div class="form-check form-switch my-2">
+            <label for="unapalabra">Una palabra</label>
+            <input type="checkbox" name="unapalabra" id="unapalabra" class="form-check-input">
+        </div>
+
+        <div class="form-check form-switch my-2">
+            <label for="dospalabras">Dos palabras</label>
+            <input type="checkbox" name="dospalabras" id="dospalabras" class="form-check-input">
+        </div>
+
+        <div class="form-check form-switch my-2">
+            <label for="azar">Al azar</label>
+            <input type="checkbox" name="azar" id="azar" class="form-check-input">
+        </div>
+
+        <button style="color:#D3E7E7" class="btn btn-outline-light botongenerar">Generar nombre</button>
+
+        </form>
+        </div>
+
+{% endblock %}
+</section>
+
+
+
+</body>
+</html>

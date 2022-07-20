@@ -1,0 +1,24 @@
+{% block content %}
+<nav style="border-radius: 5px;"  class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">Emprendenombres</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
+        <li class="nav-item matecito">
+          <a href='https://matecito.co/nicocastronc' rel='noopener' target='_blank' class="nav-link"><img srcset='https://cdn.matecito.co/button_17.png 1x, https://cdn.matecito.co/button_17_2x.png 2x, https://cdn.matecito.co/button_17_3.75x.png 3.75x' src='https://cdn.matecito.co/button_17.png' alt='Convidame un Matecito' /></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}

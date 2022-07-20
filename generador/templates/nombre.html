@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% block content %}
+
+<section>
+    <div clas="col-md-4 offset-md-4">
+    <div style='background-color:#78909c' class="card card-body cuadronuevonombre">
+        <h1>Tu nuevo emprendimiento de {{categoria}} se llama:</h1>
+        <h3>{{nombre}}</h3>
+    </div>
+</div>
+
+</section>
+<section>
+    <a style="background-color:#78909c"  class="btn btn-dark text-white" href="">Click para obtener otro nombre</a>
+</section>
+
+
+{% endblock %}
+</body>
+</html>
